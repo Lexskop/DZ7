@@ -45,7 +45,8 @@ void printResult(int[,] currentTable)
             sum = sum + currentTable[j, i];
         }        
         calc = sum / currentTable.GetLength(0);
-        Console.WriteLine($"Среднее арифметическое в {i + 1} столбце ->  {calc:N2}");
+        Console.Write($"Среднее арифметическое в {i + 1} столбце -> ");
+        printColorData($"{calc:N2}");
         sum = 0;
     }
     userAnotherTry();
