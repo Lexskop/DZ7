@@ -35,7 +35,7 @@ void printResultMatrix(int rows, int columns)
     {
         for (int j = 0; j < table.GetLength(1); j++)
         {
-            Console.Write($"{table[i, j] = randomNum(-10, 10)}\t");
+            Console.Write($"{table[i, j] = randomNum(1, 10)}\t");
         }
         Console.WriteLine("");
     }
